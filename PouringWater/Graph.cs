@@ -61,8 +61,9 @@ namespace PouringWater
                         node.AddOutgoingEdge(edge);
         }
 
-        public void ShortestPath(BucketState from, BucketState to)
+        public Path SolveProblem()
         {
+            BucketState from = Nodes[0];
             Dictionary<BucketState, int> distance = new Dictionary<BucketState, int>(Nodes.Count);
             for (int i = 0; i < Nodes.Count; i++)
                 distance[Nodes[i]] = INFTY;
@@ -85,22 +86,25 @@ namespace PouringWater
                     }
             }
 
-            List<BucketState> path = new List<BucketState>();
-            BucketState currentState = to;
-            while (currentState != from)
+            int minDistance = INFTY;
+            BucketState closestState = null;
+            foreach (var item in distance)
+                if (item.Key.Buckets[0].Amount == 2 || item.Key.Buckets[1].Amount == 2)
+                    if (item.Value < minDistance)
+                    {
+                        minDistance = item.Value;
+                        closestState = item.Key;
+                    }
+            List<Edge> pathEdges = new List<Edge>();
+            BucketState currentNode = closestState;
+            while (currentNode != Nodes[0])
             {
-                path.Add(currentState);
-                currentState = prev[currentState];
+                pathEdges.Add(GetEdge(prev[currentNode], currentNode));
+                currentNode = prev[currentNode];
             }
-            path.Add(from);
+            pathEdges.Reverse();
 
-            path.Reverse();
-            Console.WriteLine(String.Format("The shortest path from {0} to {1} is:", from.ToString(), to.ToString()));
-            foreach (var node in path)
-                Console.WriteLine(node.ToString());
-            Console.WriteLine("It has length " + distance[to]);
-            Console.ReadLine();
-
+            return new Path(pathEdges);
         }
 
         #region Private Methods
@@ -123,6 +127,14 @@ namespace PouringWater
                     return true;
 
             return false;
+        }
+
+        private Edge GetEdge(BucketState from, BucketState to)
+        {
+            foreach (Edge edge in Edges)
+                if (edge.FromNode == from && edge.ToNode == to)
+                    return edge;
+            return null;
         }
         #endregion
     }

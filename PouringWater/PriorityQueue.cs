@@ -34,5 +34,14 @@ namespace PouringWater
         {
             Q.OrderBy(item => item.Key);
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (ItemKey<T> item in Q)
+                sb.AppendLine(item.ToString());
+
+            return sb.ToString();
+        }
     }
 }

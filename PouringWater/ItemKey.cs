@@ -16,5 +16,10 @@ namespace PouringWater
             Item = item;
             Key = key;
         }
+
+        public override string ToString()
+        {
+            return "Item " + Item.ToString() + " Key: " + Key;
+        }
     }
 }

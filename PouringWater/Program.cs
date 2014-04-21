@@ -17,7 +17,9 @@ namespace PouringWater
 
             Graph graph = new Graph(new BucketState(buckets));
             graph.Populate();
-            graph.ShortestPath(graph.Nodes[0], graph.Nodes[3]);
+            Path path = graph.SolveProblem();
+            Console.WriteLine(String.Format("The shortest path for the solution is\n{0}\nand it has length {1}", path.ToString(), path.Weight));
+            Console.ReadLine();
         }
     }
 }
