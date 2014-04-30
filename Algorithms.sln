@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllCycles", "FindAllCyc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PouringWater", "PouringWater\PouringWater.csproj", "{1B483381-2EC1-4228-87C4-0E35E3A99E9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditDistance", "EditDistance\EditDistance.csproj", "{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1B483381-2EC1-4228-87C4-0E35E3A99E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B483381-2EC1-4228-87C4-0E35E3A99E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B483381-2EC1-4228-87C4-0E35E3A99E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
