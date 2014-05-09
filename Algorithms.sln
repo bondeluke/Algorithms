@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindAllCycles", "FindAllCycles\FindAllCycles.csproj", "{B15E9878-432C-4426-AF83-F8D8D542E8F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PouringWater", "PouringWater\PouringWater.csproj", "{1B483381-2EC1-4228-87C4-0E35E3A99E9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditDistance", "EditDistance\EditDistance.csproj", "{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexCover", "VertexCover\VertexCover.csproj", "{781A3ED4-F977-4FCD-9A90-469A7F5A99D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +27,10 @@ Global
 		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAC67859-E4BE-4D8D-9F40-B7E8CA9BEB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781A3ED4-F977-4FCD-9A90-469A7F5A99D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781A3ED4-F977-4FCD-9A90-469A7F5A99D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781A3ED4-F977-4FCD-9A90-469A7F5A99D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781A3ED4-F977-4FCD-9A90-469A7F5A99D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
